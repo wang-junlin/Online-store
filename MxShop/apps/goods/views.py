@@ -7,6 +7,7 @@ from rest_framework import filters
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets
+from rest_framework.authentication import TokenAuthentication
 
 from .models import Goods, GoodsCategory  #这个点的意思是搜索当前目录，也就是goods目录下的所有models
 from .filters import GoodsFilter
@@ -14,11 +15,10 @@ from .serializers import GoodsSerializer, CategorySerializer #serializer的意�
 
 
 class GoodsPagination(PageNumberPagination):
-    page_size = 10             #每页多少个。这个类的作用是可以自定义分页，很灵活，有了这个就可以不需要在settings中配置PAGE_SIZE了。
+    page_size = 12             #每页多少个。这个类的作用是可以自定义分页，很灵活，有了这个就可以不需要在settings中配置PAGE_SIZE了。
     page_size_query_param = 'page_size'
-    page_query_param = "p"     #这里决定了分页中uri显示的的分页名称
+    page_query_param = "page"     #这里决定了分页中uri显示的的分页名称
     max_page_size = 100        #单页最大数量
-
 
 
 class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
@@ -26,10 +26,11 @@ class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
+    authentication_classes = (TokenAuthentication, )
     filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)    #意思是过滤后台设置。所以的过滤方法都需要先在这里引入，然后在下面开始设置如何过滤
     filter_class = GoodsFilter                                       #这个是配置drf页面的过滤功能，这个是过滤商品类
     search_fields = ('name', 'goods_brief', 'goods_desc')            #这个是配置drf的模糊搜索过滤
-    ordering_fields = ('sold_num', 'add_time')                       #这个是配置drf的排序功能
+    ordering_fields = ('sold_num', 'shop_price')                       #这个是配置drf的排序功能
 
 
 class CategoryViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):

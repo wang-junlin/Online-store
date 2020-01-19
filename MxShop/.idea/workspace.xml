@@ -19,13 +19,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1TI9oesjcGk2Vk9j4mywKH4qsdL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/BaiduNetdiskDownload/project/t1nkuy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -165,6 +165,13 @@
       <workItem from="1578065893482" duration="4214000" />
       <workItem from="1578209065868" duration="6713000" />
       <workItem from="1578314429186" duration="4276000" />
+      <workItem from="1578321704082" duration="588000" />
+      <workItem from="1578583770693" duration="2577000" />
+      <workItem from="1578652591583" duration="8260000" />
+      <workItem from="1578723950709" duration="6795000" />
+      <workItem from="1578818667024" duration="12620000" />
+      <workItem from="1579260723560" duration="11207000" />
+      <workItem from="1579444663462" duration="5913000" />
     </task>
     <servers />
   </component>

@@ -49,18 +49,22 @@ INSTALLED_APPS = [
     'xadmin',                     #加强版的django后台框架
     'rest_framework',             #用来编写restful API的工具包。
     'django_filters',              #这个是用来做drf页面中的过滤效果
+    'corsheaders',                  #用来跨域，是服务器后端用来作为跨域使用的，使用前需pip安装，上面的其他apps都是先用pip安装，然后在settings中add。
+    'rest_framework.authtoken'      #做前后端分离中的用户认证
+
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',           #和上面的corsheaders一起的
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',      #用户登录认证使用
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',      #用户登录认证使用
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+CORS_ORIGIN_ALLOW_ALL = True                          #和上面的corsheaders一起使用的
 ROOT_URLCONF = 'MxShop.urls'
 
 TEMPLATES = [
@@ -130,6 +134,9 @@ USE_L10N = True
 
 USE_TZ = False
 
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
+)         #加入一个类，和用户认证相关。这个类在app.user中
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
@@ -140,7 +147,22 @@ MEDIA_URL = "/media/"  #把media文件夹注册进来，让django知道这是存
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [],
-    #'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    #'PAGE_SIZE': 10,
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+       # 'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    ]
 }
+
+import datetime
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7), #设置token的自动删除时间
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+}
+
+#手机号码正则表达式
+REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
+
+#云片网设置
+APIKEY = "bc9adac425c9fafcdc91194ada06e149"
