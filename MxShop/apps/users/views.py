@@ -71,6 +71,7 @@ class SmsCodeViewset(CreateModelMixin, viewsets.GenericViewSet):
 class UserViewset(CreateModelMixin, viewsets.GenericViewSet):
     #用户注册验证相关
     serializer_class = UserRegSerializer
+    queryset = User.objects.all()
 
 
 
