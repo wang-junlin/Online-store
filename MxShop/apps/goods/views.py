@@ -21,7 +21,7 @@ class GoodsPagination(PageNumberPagination):
     max_page_size = 100        #单页最大数量
 
 
-class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     #商品列表页，分页，搜索，过滤，排序
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer

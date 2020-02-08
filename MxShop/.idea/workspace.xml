@@ -25,7 +25,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/BaiduNetdiskDownload/project/t1nkuy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -172,7 +172,10 @@
       <workItem from="1578818667024" duration="12620000" />
       <workItem from="1579260723560" duration="11207000" />
       <workItem from="1579444663462" duration="5913000" />
-      <workItem from="1579528553665" duration="5654000" />
+      <workItem from="1579528553665" duration="6796000" />
+      <workItem from="1581045495833" duration="8000" />
+      <workItem from="1581071570458" duration="5053000" />
+      <workItem from="1581156093721" duration="9436000" />
     </task>
     <servers />
   </component>

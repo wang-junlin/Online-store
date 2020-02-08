@@ -17,11 +17,11 @@ class UserFav(models.Model):
     class Meta:
         verbose_name = "用户收藏"
         verbose_name_plural = verbose_name
-        #源代码中这里有unique_together = ("user", "goods")
+        unique_together = ("user", "goods") #此代码作用：让用户对同一件商品只能收藏一次，不能重复。
 
     def __str__(self):
-        return self.user.name
-        #上面这个地方引用的user.name应该是引用的users模型中的name（源代码中这里是return self.user.username）
+        return self.user.username
+        #上面这个地方引用的user.name应该是引用的users模型中的name
 
 class UserLeavingMessage(models.Model):
     #用户留言

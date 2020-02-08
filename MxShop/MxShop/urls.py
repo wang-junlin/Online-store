@@ -24,15 +24,16 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 from goods.views import GoodsListViewSet, CategoryViewset
 from users.views import SmsCodeViewset, UserViewset
-router = DefaultRouter()                                             #给DefaultRouter方法创建一个对象，后期的url都会基于routers来配置
+from user_operation.views import UserFavViewset
 
-router.register(r'goods', GoodsListViewSet, base_name="goods")         #配置goods的url
+router = DefaultRouter()                                 #给DefaultRouter方法创建一个对象，后期的url都会基于routers来配置
 
-router.register(r'codes', SmsCodeViewset, base_name="codes")            #配置注册页面
+router.register(r'goods', GoodsListViewSet, base_name="goods")                  #配置goods的url
+router.register(r'codes', SmsCodeViewset, base_name="codes")                    #配置注册页面
+router.register(r'categorys', CategoryViewset, base_name="categorys")           #配置category的url
+router.register(r'users', UserViewset, base_name="users")                       #用户验证页面
+router.register(r'userfavs', UserFavViewset, base_name="userfavs")  #用户对于商品的收藏功能
 
-router.register(r'categorys', CategoryViewset, base_name="categorys")      #配置category的url
-
-router.register(r'users', UserViewset, base_name="users")                #用户验证页面
 
 
 #源文件中这里有一句from django.contrib import admin
@@ -43,7 +44,7 @@ urlpatterns = [
 
         url(r'^', include(router.urls)),         #商品返回到rest framework中的一个列表，这个url的配置在上面22-25行。
 
-        url(r'^docs/', include_docs_urls(title="慕学生鲜")),
-        url(r'^api-token-auth/', views.obtain_auth_token),     #drf自带的认证模式
-        url(r'^login/', obtain_jwt_token),            #jwt的认证接口
+        url(r'^docs/', include_docs_urls(title="在线电商")),            #drf自带的文档功能，可以自动生成文档，很方便
+        url(r'^api-token-auth/', views.obtain_auth_token),              #drf自带的认证模式
+        url(r'^login/', obtain_jwt_token),                              #jwt的认证接口
 ]
