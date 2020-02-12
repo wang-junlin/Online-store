@@ -25,20 +25,20 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/utils" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\django\MxShop\apps\utils" />
+      <recent name="D:\django\MxShop\apps\trade" />
+      <recent name="D:\django\MxShop\media" />
+      <recent name="D:\django\MxShop\db_tools" />
+      <recent name="D:\django\MxShop\apps\users" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\django\MxShop\db_tools\data" />
       <recent name="D:\django\MxShop\apps" />
       <recent name="D:\django\MxShop\apps\users" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\django\MxShop\db_tools" />
-      <recent name="D:\django\MxShop\media" />
-      <recent name="D:\django\MxShop\apps\users" />
-      <recent name="D:\django\MxShop\apps\user_operation" />
-      <recent name="D:\django\MxShop\apps\trade" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -176,6 +176,10 @@
       <workItem from="1581045495833" duration="8000" />
       <workItem from="1581071570458" duration="5053000" />
       <workItem from="1581156093721" duration="9436000" />
+      <workItem from="1581314524024" duration="4454000" />
+      <workItem from="1581336264395" duration="629000" />
+      <workItem from="1581429510322" duration="592000" />
+      <workItem from="1581507827415" duration="1400000" />
     </task>
     <servers />
   </component>
