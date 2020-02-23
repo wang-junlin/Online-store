@@ -8,5 +8,6 @@
 后端框架:Django  
 数据库:Mysql  
 网站后台:Xadmin  
-### 思维导图
-![如图片无法显示请点击上方](https://raw.githubusercontent.com/wang-junlin/Online-store/master/Mind%20mapping.png)
+### 思维导图  
+
+![如图片无法显示请点击上方Mind mapping.png文件进行查看](https://raw.githubusercontent.com/wang-junlin/Online-store/master/Mind%20mapping.png)
