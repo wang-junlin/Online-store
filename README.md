@@ -9,4 +9,4 @@
 数据库:Mysql  
 网站后台:Xadmin  
 ### 思维导图
-![Image text](https://github.com/wang-junlin/Online-store/blob/master/Mind%20mapping.png)
+![如图片无法显示请点击上方](https://github.com/wang-junlin/Online-store/blob/master/Mind%20mapping.png)
