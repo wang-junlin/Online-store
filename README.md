@@ -1,9 +1,23 @@
 ### 项目介绍  
-在线生鲜电商网站，采用前后端分离式开发技术，使用Django构建该项目后端业务逻辑，编写RESTful接口供前端使用。 
+一个类似于天猫超市的生鲜电商网站，采用前后端分离式开发技术，前端使用VUE，我负责使用Django开发该项目所有后端业务逻辑，并开发RESTful API供前端调用。
 ### 思维导图
-![如图片无法显示请点击上方Mind mapping.png文件进行查看](https://raw.githubusercontent.com/wang-junlin/Online-store/master/Mind%20mapping.png)
-### 功能模块
-整个后端代码大致围绕网站后台系统、商品管理、用户管理、用户操作、订单管理、支付管理进行开发。   
+![如图片无法显示请点击上方Mind mapping.png文件进行查看](https://raw.githubusercontent.com/wang-junlin/Online-store/master/Mind%20mapping.png)  
+### 网页演示地址  
+[链接名称](http://114.115.171.87:8000/)
+### 部分功能展示  
+* 前端页面展示  
+![前端页面展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/6.PNG)  
+![前端页面展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/7.PNG)  
+![前端页面展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/8.PNG)  
+* Xadmin后台管理系统，实现商品增删改查、用户管理、日志管理、订单管理等功能。  
+![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/9.PNG)  
+![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/10.PNG)  
+![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/4.PNG)  
+![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/3.PNG)  
+![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/5.PNG)  
+* DRF页面，可对后端数据进行搜索查询、过滤、排序等操作，便于调试。  
+![DRF页面](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/1.PNG)  
+![DRF页面](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/2.PNG)  
 ### 技术栈
 语言:Python3  
 后端框架:Django  
