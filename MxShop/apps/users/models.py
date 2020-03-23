@@ -1,6 +1,6 @@
 from datetime import datetime
 from django.db import models
-from django.contrib.auth.models import AbstractUser     #contrib是django的一个工具集，里面包含很多东西，比如验证相关的auth，后台相关的xadmin等等。
+from django.contrib.auth.models import AbstractUser       #contrib是django的一个工具集，里面包含很多东西，比如验证相关的auth，后台相关的xadmin等等。
 
 class UserProfile(AbstractUser):
     #用户

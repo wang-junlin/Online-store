@@ -39,7 +39,7 @@ urlpatterns = [
         url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')), #这个是drf登录的一个配置,如果不配置就不会出现登录这个按钮
         url(r'^media/(?P<path>.*)$', serve, {"document_root":MEDIA_ROOT}),
 
-        url(r'^', include(router.urls)),         #商品返回到rest framework中的一个列表，这个url的配置在上面22-25行。
+        url(r'^', include(router.urls)),                                #商品返回到rest framework中的一个列表，这个url的配置在上面22-25行。
 
         url(r'^docs/', include_docs_urls(title="在线电商")),            #drf自带的文档功能，可以自动生成文档，很方便
         url(r'^api-token-auth/', views.obtain_auth_token),              #drf自带的认证模式

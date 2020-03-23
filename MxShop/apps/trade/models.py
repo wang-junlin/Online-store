@@ -57,9 +57,9 @@ class OrderInfo(models.Model):
 class OrderGoods(models.Model):
     #订单的商品详情
 
-    order = models.ForeignKey(OrderInfo, verbose_name="订单信息", related_name="goods") #继承上面的订单类
-    goods = models.ForeignKey(Goods, verbose_name="商品") #goods就是商品，所以要继承商品类，Goods是从goods这个app里import过来
-    goods_num = models.IntegerField(default=0, verbose_name="商品数量") #有关数字的都需要给一个默认值
+    order = models.ForeignKey(OrderInfo, verbose_name="订单信息", related_name="goods") #继承订单类
+    goods = models.ForeignKey(Goods, verbose_name="商品")                               #继承商品类
+    goods_num = models.IntegerField(default=0, verbose_name="商品数量")                 #需定一个默认值
 
     add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
 

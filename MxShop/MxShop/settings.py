@@ -136,7 +136,7 @@ USE_TZ = False
 
 AUTHENTICATION_BACKENDS = (
     'users.views.CustomBackend',
-)         #加入一个类，和用户认证相关。此类app.user中。
+)                      #加入一个类，和用户认证相关。此类app.user中。
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

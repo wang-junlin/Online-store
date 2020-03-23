@@ -10,7 +10,7 @@ class GoodsCategory(models.Model):
         (3,"三级类别"),
     )
 
-    name = models.CharField(default="", max_length=30, verbose_name="类别名", help_text="类别名")              #名字；help_text是在后面文档的时候有用处。
+    name = models.CharField(default="", max_length=30, verbose_name="类别名", help_text="类别名")
     code = models.CharField(default="", max_length=30, verbose_name="类别code", help_text="类别code")          #编码，可通过字母英文来搜索
     desc = models.TextField(default="", verbose_name="类别描述", help_text="类别描述")                         #简单描述
     category_type = models.IntegerField(choices=CATEGORY_TYPE, verbose_name="类目级别", help_text="类目级别")  #整数，选择1、2、3级类;category的意思是类别类型
