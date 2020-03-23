@@ -7,16 +7,25 @@
 ### 部分功能展示  
 * 前端页面展示  
 ![前端页面展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/6.PNG)  
+
 ![前端页面展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/7.PNG)  
+
 ![前端页面展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/8.PNG)  
+
 * Xadmin后台管理系统，实现商品增删改查、用户管理、日志管理、订单管理等功能。  
 ![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/9.PNG)  
+
 ![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/10.PNG)  
+
 ![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/4.PNG)  
+
 ![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/3.PNG)  
+
 ![Xadmin后台管理系统图片展示](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/5.PNG)  
+
 * DRF页面，可对后端数据进行搜索查询、过滤、排序等操作，便于调试。  
 ![DRF页面](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/1.PNG)  
+
 ![DRF页面](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/2.PNG)  
 ### 技术栈
 语言:Python3  
