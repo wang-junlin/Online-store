@@ -32,11 +32,8 @@ router.register(r'goods', GoodsListViewSet, base_name="goods")                  
 router.register(r'codes', SmsCodeViewset, base_name="codes")                    #配置注册页面
 router.register(r'categorys', CategoryViewset, base_name="categorys")           #配置category的url
 router.register(r'users', UserViewset, base_name="users")                       #用户验证页面
-router.register(r'userfavs', UserFavViewset, base_name="userfavs")  #用户对于商品的收藏功能
+router.register(r'userfavs', UserFavViewset, base_name="userfavs")              #用户对于商品的收藏功能
 
-
-
-#源文件中这里有一句from django.contrib import admin
 urlpatterns = [
         url(r'^xadmin/', xadmin.site.urls),
         url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')), #这个是drf登录的一个配置,如果不配置就不会出现登录这个按钮

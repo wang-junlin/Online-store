@@ -44,27 +44,27 @@ INSTALLED_APPS = [
     'DjangoUeditor',
     'goods.apps.GoodsConfig',
     'trade.apps.TradeConfig',
-    'user_operation.apps.UserOperationConfig',          #编写的apps中的各大app名字要加进来
-    'crispy_forms',                #和xadmin搭配使用的东西
-    'xadmin',                     #加强版的django后台框架
-    'rest_framework',             #用来编写restful API的工具包。
-    'django_filters',              #这个是用来做drf页面中的过滤效果
-    'corsheaders',                  #用来跨域，是服务器后端用来作为跨域使用的，使用前需pip安装，上面的其他apps都是先用pip安装，然后在settings中add。
-    'rest_framework.authtoken'      #做前后端分离中的用户认证
+    'user_operation.apps.UserOperationConfig',      #添加apps
+    'crispy_forms',
+    'xadmin',                                       #加强版django后台框架
+    'rest_framework',                               #用来编写restful API的工具包。
+    'django_filters',                               #用来做drf页面中的过滤效果
+    'corsheaders',                                  #服务器后端作为跨域使用，需pip安装。
+    'rest_framework.authtoken'                      #做前后端分离中的用户认证
 
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',           #和上面的corsheaders一起的
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',      #用户登录认证使用
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',      #用户登录认证使用
+    'django.contrib.auth.middleware.AuthenticationMiddleware',   #用户登录认证使用
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ORIGIN_ALLOW_ALL = True                          #和上面的corsheaders一起使用的
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'MxShop.urls'
 
 TEMPLATES = [
@@ -136,7 +136,7 @@ USE_TZ = False
 
 AUTHENTICATION_BACKENDS = (
     'users.views.CustomBackend',
-)         #加入一个类，和用户认证相关。这个类在app.user中
+)         #加入一个类，和用户认证相关。此类app.user中。
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
@@ -157,7 +157,7 @@ REST_FRAMEWORK = {
 
 import datetime
 JWT_AUTH = {
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7), #设置token的自动删除时间
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),    #设置token的自动删除时间
     'JWT_AUTH_HEADER_PREFIX': 'JWT',
 }
 
