@@ -1,9 +1,8 @@
-#### 项目介绍  
+### 项目介绍  
 一个类似于天猫超市的生鲜电商网站，采用前后端分离式开发技术，前端使用VUE，我负责使用Django开发该项目所有后端业务逻辑，并开发RESTful API供前端调用。
-#### 思维导图
+### 思维导图
 ![如图片无法显示请点击上方Mind mapping.png文件进行查看](https://raw.githubusercontent.com/wang-junlin/Online-store/master/Mind%20mapping.png)  
-#### 网页演示地址  
-[链接名称](http://114.115.171.87:8000/)
+### [点我进入网站](http://114.115.171.87:8000/)  
 ### 部分功能展示  
 * 前端页面展示  
 
