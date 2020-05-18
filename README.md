@@ -2,7 +2,6 @@
 一个专注于生鲜食品售卖的平台。
 ### 思维导图
 ![如图片无法显示请点击上方Mind mapping.png文件进行查看](https://raw.githubusercontent.com/wang-junlin/Online-store/master/Mind%20mapping.png)  
-### [点击进入网站Demo](http://114.115.171.87:8000/)  
 ### 部分功能展示  
 * 前端页面展示  
 
