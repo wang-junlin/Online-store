@@ -1,5 +1,5 @@
 ### 项目介绍  
-一个专注于生鲜食品售卖的平台。
+专注于蔬果售卖的平台。
 ### 思维导图
 ![如图片无法显示请点击上方Mind mapping.png文件进行查看](https://raw.githubusercontent.com/wang-junlin/Online-store/master/Mind%20mapping.png)  
 ### 部分功能展示  
@@ -33,9 +33,9 @@
 
 ![DRF页面](https://github.com/wang-junlin/Online-store/blob/master/MxShop/media/image/2.PNG)  
 ### 技术栈
-技术语言:Python  
+语言:Python  
 后端框架:Django / Django REST Framework / Xadmin  
 数据库:Mysql  
-开发系统:Windows / Linux  
+系统:Windows / Linux  
 IDE:Pycharm  
 工具:Git / Navicat / Virtualenvwrapper
